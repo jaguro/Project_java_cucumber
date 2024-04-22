@@ -13,10 +13,9 @@ pruebas basada en comportamientos (BDD).
 1. [Introducción](#introducción)
 2. [Recursos](#Recursos)
 3. [Instalación](#instalación)
-4. [Usos prácticos](#Usos prácticos)
-5. [Estructura del Proyecto](#estructura-del-proyecto)
-6. [Contribución](#contribución)
-7. [Herramientas](#licencia)
+4. [Estructura del Proyecto](#estructura-del-proyecto)
+5. [Contribución](#contribución)
+6. [Herramientas](#licencia)
 
 ## Introducción
 
