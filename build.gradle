@@ -1,5 +1,3 @@
-import com.sun.source.doctree.SystemPropertyTree
-
 plugins {
     id 'java'
 }
@@ -12,14 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.18.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.19.1'
     testImplementation group: 'org.testng', name: 'testng', version: '7.9.0'
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.7.0'
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.7.0'
 }
 
 tasks.named('test') {
-    systemProperty 'cucumber.options', System.getProperty('cucumber.options')
+    systemProperties = System.getProperties()
 }

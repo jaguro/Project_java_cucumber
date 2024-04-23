@@ -1,20 +1,24 @@
-Feature: La barra de navegacion permite la visualizacion de todos las secciones web
-  Puedo hacer click en los links
-  No tengo por que estar logueado previamente
-  Puedo ver el resto de secciones web
+Feature: Navigation bar
+  To see the subpages
+  Without logging in
+  I can click the navigation bar links
 
-Scenario Outline: Puedo acceder a las subsecciones haciendo click en las opciones del NavBar
-  Given Puedo navegar a la siguiente web www.feerangetesters.com
-  When Puedo entrar en la <seccion> haciendo click
-  Examples:
-    | seccion    |
-    | Cursos     |
-    | Recursos   |
-    | Blog       |
-    | Mentorías  |
-    | Udemy      |
+#Scenario Outline: I can access the subpages through the navigation bar
+  #Given I navigate to www.feerangetesters.com
+  #When I go to <section> using the navigation bar
+  #Examples:
+    #| section    |
+    #| Cursos     |
+    #| Recursos   |
+    #| Blog       |
+    #| Mentorías  |
+    #| Udemy      |
 
+  #Scenario: Courses are presented correctlt to potencial customers
+    #Given I navigate to www.feerangetesters.com
+    #When I go to Cursos using the navigation bar
+    #And select Introduction al Testing
 
-
-
-
+  Scenario: Users can select a plan when signing up
+    Given I navigate to www.feerangetesters.com
+    When I select Elegir Plan
